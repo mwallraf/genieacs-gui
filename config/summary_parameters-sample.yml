@@ -7,6 +7,7 @@ Hardware version: InternetGatewayDevice.DeviceInfo.HardwareVersion
 Software version: InternetGatewayDevice.DeviceInfo.SoftwareVersion
 MAC: VirtualParameters.MACAddress
 TR069 Mgmt IP: VirtualParameters.TR069MgmtIp
+Service ID: VirtualParameters.ProvisioningCode
 IP: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1.ExternalIPAddress
 WLAN SSID: InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.SSID
 WLAN passphrase: InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.KeyPassphrase

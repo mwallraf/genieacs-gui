@@ -3,4 +3,5 @@ Product class: InternetGatewayDevice.DeviceInfo.ProductClass
 ModelName: VirtualParameters.ModelName
 Software version: InternetGatewayDevice.DeviceInfo.SoftwareVersion
 MAC: VirtualParameters.MACAddress
-IP: InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1.ExternalIPAddress
+TR069 Mgmt IP: VirtualParameters.TR069MgmtIp
+Service ID: VirtualParameters.ProvisioningCode
