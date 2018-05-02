@@ -2,7 +2,7 @@
   param_names = Rails.configuration.index_parameters
 
   sort_param = params[:sort].start_with?('-') ? params[:sort][1..-1] : params[:sort] rescue '-_lastInform'
-  sort_symbol = params[:sort].start_with?('-') ? ' &#9650;' : ' &#9660;' rescue ' &#9660;'
+  sort_symbol = params[:sort].start_with?('-') ? ' &#9650;' : ' &#9660;' rescue nil
   content_for :title do 'Devices List' end
 %>
 <h1>Listing devices</h1>
@@ -18,7 +18,7 @@ filters = {
 <b>Filters</b>
 <form id="filters" onsubmit="updateFilters('filters');" >
   <input type="hidden" name="query" value='<%= @query.to_json %>' />
-  <input type="hidden" name="sort" value="<%= sort_param %>" />
+  <input type="hidden" name="sort" value="<%= params[:sort] %>" />
   <div class="filters_container"></div>
   <div class="filter_selection"></div>
   <br/><br/>
